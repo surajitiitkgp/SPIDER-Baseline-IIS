@@ -4,6 +4,8 @@ python3 Entrypoint.py TrainSpine --overwrite model3
 
 ### For Test
 python3 Entrypoint.py TestSpine SPIDER-Baseline --dataset Spine_Seg --epoch 999999
+python Entrypoint.py TestSpine SPIDER-Baseline --dataset Our_Spine_Seg --epoch 999999 --subset validation --export_orgres
 
 ### Evaliation
 python Entrypoint.py EvaluateSpine SPIDER-Baseline --dataset Spine_Seg --subset validation
+python Entrypoint.py EvaluateSpine SPIDER-Baseline --dataset Spine_Seg --subset validation --eval_orgres
